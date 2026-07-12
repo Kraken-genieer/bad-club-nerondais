@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #F3F7FB; }
+    a { color: #1B7FB8; } a:hover { color: #F58220; }
+    @keyframes bcnUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</helmet>
+
+<div data-screen-label="Contact" style="min-height: 100vh; display: flex; flex-direction: column; background: #F3F7FB; font-family: 'Barlow', sans-serif; color: #10263E;">
+
+  <header style="position: sticky; top: 0; z-index: 30; background: rgba(10, 37, 64, 0.97); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(41, 171, 226, 0.25);">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 10px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+      <a href="Accueil.dc.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF;">
+        <span style="width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden; flex: none;">
+          <img src="assets/logo-bcn.jpg" alt="Logo B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
+        </span>
+        <span style="display: flex; flex-direction: column;">
+          <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Bad Club Nérondais</span>
+          <span style="font-size: 11.5px; color: #8FB6D9;">← Retour à la scène d'accueil</span>
+        </span>
+      </a>
+      <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <nav style="display: flex; align-items: center; gap: 2px; flex-wrap: wrap;">
+          <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="8">
+            <a href="{{ l.href }}" style="padding: 8px 10px; text-decoration: none; color: {{ l.color }}; font-family: 'Oswald', sans-serif; font-size: 13.5px; letter-spacing: 1.2px; text-transform: uppercase; border-bottom: {{ l.border }};" style-hover="color: #4FC6F5;">{{ l.label }}</a>
+          </sc-for>
+        </nav>
+      </sc-if>
+      <sc-if value="{{ showBurger }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display: flex; flex-direction: column; gap: 5px; padding: 12px; background: transparent; border: 1px solid rgba(41, 171, 226, 0.4); border-radius: 10px; cursor: pointer;">
+          <span style="width: 22px; height: 2px; background: #4FC6F5;"></span>
+          <span style="width: 22px; height: 2px; background: #4FC6F5;"></span>
+          <span style="width: 22px; height: 2px; background: #4FC6F5;"></span>
+        </button>
+      </sc-if>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <nav style="display: flex; flex-direction: column; padding: 6px 16px 16px; gap: 2px; background: rgba(10, 37, 64, 0.98);">
+        <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="8">
+          <a href="{{ l.href }}" style="padding: 12px 10px; text-decoration: none; color: {{ l.color }}; font-family: 'Oswald', sans-serif; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px solid rgba(41, 171, 226, 0.12);">{{ l.label }}</a>
+        </sc-for>
+      </nav>
+    </sc-if>
+  </header>
+
+  <section style="background: linear-gradient(135deg, #0A2540 0%, #0D1B3E 55%, #123058 100%); color: #FFFFFF; padding: 60px 24px 52px;">
+    <div style="max-width: 1180px; margin: 0 auto; animation: bcnUp 0.6s ease both;">
+      <div style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: #4FC6F5; margin-bottom: 10px;">On vous répond vite</div>
+      <h1 style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 58px); letter-spacing: 4px; text-transform: uppercase; line-height: 1.05;">Contact</h1>
+      <div style="width: 80px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #F58220 50%, #29ABE2 50%); margin: 18px 0;"></div>
+      <p style="margin: 0; max-width: 620px; font-size: 18px; line-height: 1.6; color: #B9D4EA;">Une question, une envie d'essayer ? Écrivez-nous ou passez directement à un créneau.</p>
+    </div>
+  </section>
+
+  <main style="flex: 1; max-width: 1180px; margin: 0 auto; width: 100%; padding: 48px 24px 0; box-sizing: border-box;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; align-items: start;">
+
+      <!-- Coordonnées -->
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="background: #FFFFFF; border: 1px solid #DCE8F2; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06);">
+          <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #29ABE2;">Coordonnées</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-weight: 700; font-size: 17px; color: #0A2540;">Complexe Sportif Céline Dumerc</span>
+            <span style="font-size: 15px; color: #55708A;">12 rue Verte, 18350 Nérondes</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <a href="mailto:bcn18350@gmail.com" style="font-weight: 600; font-size: 16px;">bcn18350@gmail.com</a>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="tel:+33647326877" style="font-weight: 600; font-size: 16px; text-decoration: none;">06 47 32 68 77</a>
+              <a href="tel:+33668358824" style="font-weight: 600; font-size: 16px; text-decoration: none;">06 68 35 88 24</a>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/badclubnerondais.nerondes.9" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 999px; background: linear-gradient(135deg, #29ABE2, #1B7FB8); color: #FFFFFF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;" style-hover="transform: translateY(-2px); color: #FFFFFF;">Page Facebook →</a>
+        </div>
+        <div style="border-radius: 20px; overflow: hidden; border: 1px solid #DCE8F2; box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06); background: #FFFFFF;">
+          <iframe title="Carte — Nérondes, Complexe Sportif Céline Dumerc" src="https://www.openstreetmap.org/export/embed.html?bbox=2.7860%2C46.9860%2C2.8560%2C47.0140&amp;layer=mapnik&amp;marker=46.9997%2C2.8210" style="width: 100%; height: 280px; border: 0; display: block;" loading="lazy"></iframe>
+          <div style="padding: 10px 16px; font-size: 13px; color: #7A93AB;">Nérondes (Cher) — <a href="https://www.openstreetmap.org/?mlat=46.9997&amp;mlon=2.8210#map=15/46.9997/2.8210" target="_blank" rel="noopener">agrandir la carte</a></div>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <form onSubmit="{{ sendMail }}" style="background: #0A2540; border-radius: 20px; padding: 32px 30px; display: flex; flex-direction: column; gap: 16px; color: #FFFFFF; box-shadow: 0 14px 34px rgba(10, 37, 64, 0.25);">
+        <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 1.5px; text-transform: uppercase;">Écrivez-nous</span>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #9FC2DE;">
+          Votre nom
+          <input value="{{ nom }}" onChange="{{ setNom }}" required placeholder="Prénom Nom" style="padding: 13px 16px; border-radius: 12px; border: 1px solid rgba(41, 171, 226, 0.35); background: rgba(255, 255, 255, 0.06); color: #FFFFFF; font-family: 'Barlow', sans-serif; font-size: 15px; outline: none;" style-focus="border-color: #29ABE2;">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #9FC2DE;">
+          Votre email
+          <input type="email" value="{{ email }}" onChange="{{ setEmail }}" required placeholder="vous@exemple.fr" style="padding: 13px 16px; border-radius: 12px; border: 1px solid rgba(41, 171, 226, 0.35); background: rgba(255, 255, 255, 0.06); color: #FFFFFF; font-family: 'Barlow', sans-serif; font-size: 15px; outline: none;" style-focus="border-color: #29ABE2;">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #9FC2DE;">
+          Votre message
+          <textarea value="{{ message }}" onChange="{{ setMessage }}" required rows="5" placeholder="Bonjour, je souhaiterais essayer le badminton…" style="padding: 13px 16px; border-radius: 12px; border: 1px solid rgba(41, 171, 226, 0.35); background: rgba(255, 255, 255, 0.06); color: #FFFFFF; font-family: 'Barlow', sans-serif; font-size: 15px; outline: none; resize: vertical;" style-focus="border-color: #29ABE2;"></textarea>
+        </label>
+        <button type="submit" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; padding: 14px 30px; border-radius: 999px; border: none; background: linear-gradient(135deg, #F58220, #E06A0A); color: #FFFFFF; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; box-shadow: 0 8px 24px rgba(245, 130, 32, 0.4);" style-hover="transform: translateY(-2px);">Envoyer le message →</button>
+        <span style="font-size: 12.5px; color: #7FA3C4;">L'envoi ouvre votre messagerie avec le message pré-rempli, adressé à bcn18350@gmail.com.</span>
+      </form>
+
+    </div>
+  </main>
+
+  <footer style="background: #0A2540; color: #C9DCEE; margin-top: 72px;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 44px 24px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+        <span style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <img src="assets/logo-bcn.jpg" alt="Logo B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
+        </span>
+        <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Bad Club Nérondais</span>
+        <a href="https://www.facebook.com/badclubnerondais.nerondes.9" target="_blank" rel="noopener" style="color: #4FC6F5; font-weight: 600; text-decoration: none;">Suivez-nous sur Facebook →</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+        <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #4FC6F5;">Créneaux</span>
+        <span><strong style="color: #FFFFFF;">Mardi</strong> · 19h00 – 21h00</span>
+        <span><strong style="color: #FFFFFF;">Dimanche</strong> · 10h00 – 12h00</span>
+        <span style="color: #8FB6D9;">Complexe Sportif Céline Dumerc<br>12 rue Verte, 18350 Nérondes</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+        <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #4FC6F5;">Contact</span>
+        <a href="mailto:bcn18350@gmail.com" style="color: #C9DCEE; text-decoration: none;">bcn18350@gmail.com</a>
+        <span>06 47 32 68 77 · 06 68 35 88 24</span>
+        <span style="color: #8FB6D9;">Avec le soutien de la FFBad</span>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(41, 171, 226, 0.2); padding: 16px 24px; text-align: center; font-size: 13px; color: #7FA3C4;">© Bad Club Nérondais — Saison 2026-2027</div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    narrow: typeof window !== 'undefined' && window.innerWidth < 1020,
+    menuOpen: false,
+    nom: '',
+    email: '',
+    message: '',
+  };
+
+  componentDidMount() {
+    this._r = () => {
+      const narrow = window.innerWidth < 1020;
+      if (narrow !== this.state.narrow) this.setState({ narrow, menuOpen: false });
+    };
+    window.addEventListener('resize', this._r);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._r);
+  }
+
+  renderVals() {
+    const active = 'Contact';
+    const pages = [
+      ['Accueil', 'Accueil.dc.html'],
+      ['Le Club', 'Le Club.dc.html'],
+      ['Créneaux & Tarifs', 'Creneaux et Tarifs.dc.html'],
+      ['Actualités', 'Actualites.dc.html'],
+      ['Galerie', 'Galerie.dc.html'],
+      ['Le Bureau', 'Le Bureau.dc.html'],
+      ['Liens utiles', 'Liens utiles.dc.html'],
+      ['Contact', 'Contact.dc.html'],
+    ];
+    const navLinks = pages.map(([label, href]) => ({
+      label,
+      href,
+      color: label === active ? '#4FC6F5' : '#DCEAF7',
+      border: label === active ? '2px solid #F58220' : '2px solid transparent',
+    }));
+    return {
+      navLinks,
+      showNav: !this.state.narrow,
+      showBurger: this.state.narrow,
+      menuOpen: this.state.narrow && this.state.menuOpen,
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      nom: this.state.nom,
+      email: this.state.email,
+      message: this.state.message,
+      setNom: (e) => this.setState({ nom: e.target.value }),
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      setMessage: (e) => this.setState({ message: e.target.value }),
+      sendMail: (e) => {
+        e.preventDefault();
+        const subject = encodeURIComponent('Contact via le site — ' + this.state.nom);
+        const body = encodeURIComponent(this.state.message + '\n\n— ' + this.state.nom + ' (' + this.state.email + ')');
+        window.location.href = 'mailto:bcn18350@gmail.com?subject=' + subject + '&body=' + body;
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

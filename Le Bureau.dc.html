@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #F3F7FB; }
+    a { color: #1B7FB8; } a:hover { color: #F58220; }
+    @keyframes bcnUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</helmet>
+
+<div data-screen-label="Le Bureau" style="min-height: 100vh; display: flex; flex-direction: column; background: #F3F7FB; font-family: 'Barlow', sans-serif; color: #10263E;">
+
+  <header style="position: sticky; top: 0; z-index: 30; background: rgba(10, 37, 64, 0.97); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(41, 171, 226, 0.25);">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 10px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+      <a href="Accueil.dc.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF;">
+        <span style="width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden; flex: none;">
+          <img src="assets/logo-bcn.jpg" alt="Logo B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
+        </span>
+        <span style="display: flex; flex-direction: column;">
+          <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Bad Club Nérondais</span>
+          <span style="font-size: 11.5px; color: #8FB6D9;">← Retour à la scène d'accueil</span>
+        </span>
+      </a>
+      <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <nav style="display: flex; align-items: center; gap: 2px; flex-wrap: wrap;">
+          <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="8">
+            <a href="{{ l.href }}" style="padding: 8px 10px; text-decoration: none; color: {{ l.color }}; font-family: 'Oswald', sans-serif; font-size: 13.5px; letter-spacing: 1.2px; text-transform: uppercase; border-bottom: {{ l.border }};" style-hover="color: #4FC6F5;">{{ l.label }}</a>
+          </sc-for>
+        </nav>
+      </sc-if>
+      <sc-if value="{{ showBurger }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display: flex; flex-direction: column; gap: 5px; padding: 12px; background: transparent; border: 1px solid rgba(41, 171, 226, 0.4); border-radius: 10px; cursor: pointer;">
+          <span style="width: 22px; height: 2px; background: #4FC6F5;"></span>
+          <span style="width: 22px; height: 2px; background: #4FC6F5;"></span>
+          <span style="width: 22px; height: 2px; background: #4FC6F5;"></span>
+        </button>
+      </sc-if>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <nav style="display: flex; flex-direction: column; padding: 6px 16px 16px; gap: 2px; background: rgba(10, 37, 64, 0.98);">
+        <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="8">
+          <a href="{{ l.href }}" style="padding: 12px 10px; text-decoration: none; color: {{ l.color }}; font-family: 'Oswald', sans-serif; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px solid rgba(41, 171, 226, 0.12);">{{ l.label }}</a>
+        </sc-for>
+      </nav>
+    </sc-if>
+  </header>
+
+  <section style="background: linear-gradient(135deg, #0A2540 0%, #0D1B3E 55%, #123058 100%); color: #FFFFFF; padding: 60px 24px 52px;">
+    <div style="max-width: 1180px; margin: 0 auto; animation: bcnUp 0.6s ease both;">
+      <div style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: #4FC6F5; margin-bottom: 10px;">L'équipe dirigeante</div>
+      <h1 style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 58px); letter-spacing: 4px; text-transform: uppercase; line-height: 1.05;">Le Bureau</h1>
+      <div style="width: 80px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #F58220 50%, #29ABE2 50%); margin: 18px 0;"></div>
+      <p style="margin: 0; max-width: 620px; font-size: 18px; line-height: 1.6; color: #B9D4EA;">Des bénévoles passionnés qui font vivre le club toute la saison.</p>
+    </div>
+  </section>
+
+  <main style="flex: 1; max-width: 1180px; margin: 0 auto; width: 100%; padding: 48px 24px 0; box-sizing: border-box;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+      <sc-for list="{{ membres }}" as="m" hint-placeholder-count="6">
+        <div style="background: #FFFFFF; border: {{ m.border }}; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease;" style-hover="transform: translateY(-4px); box-shadow: 0 16px 36px rgba(10, 37, 64, 0.13);">
+          <span style="width: 76px; height: 76px; border-radius: 50%; background: {{ m.bg }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 1px; box-shadow: 0 6px 18px {{ m.glow }};">{{ m.initials }}</span>
+          <span style="font-family: 'Oswald', sans-serif; font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase; color: {{ m.accent }}; font-weight: 600;">{{ m.role }}</span>
+          <span style="font-weight: 700; font-size: 19px; color: #0A2540;">{{ m.name }}</span>
+          <sc-if value="{{ m.pending }}" hint-placeholder-val="{{ false }}">
+            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #A4B8CA;">poste à pourvoir — nom à compléter</span>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top: 48px; background: #FFFFFF; border: 1px solid #DCE8F2; border-radius: 20px; padding: 28px 30px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06);">
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1.5px; color: #0A2540;">Une question pour le bureau ?</span>
+        <span style="font-size: 15px; color: #55708A;">Écrivez-nous, nous répondons rapidement.</span>
+      </div>
+      <a href="Contact.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 13px 26px; border-radius: 999px; background: linear-gradient(135deg, #29ABE2, #1B7FB8); color: #FFFFFF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 2px; text-transform: uppercase;" style-hover="transform: translateY(-2px); color: #FFFFFF;">Nous contacter →</a>
+    </div>
+  </main>
+
+  <footer style="background: #0A2540; color: #C9DCEE; margin-top: 72px;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 44px 24px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+        <span style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <img src="assets/logo-bcn.jpg" alt="Logo B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
+        </span>
+        <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Bad Club Nérondais</span>
+        <a href="https://www.facebook.com/badclubnerondais.nerondes.9" target="_blank" rel="noopener" style="color: #4FC6F5; font-weight: 600; text-decoration: none;">Suivez-nous sur Facebook →</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+        <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #4FC6F5;">Créneaux</span>
+        <span><strong style="color: #FFFFFF;">Mardi</strong> · 19h00 – 21h00</span>
+        <span><strong style="color: #FFFFFF;">Dimanche</strong> · 10h00 – 12h00</span>
+        <span style="color: #8FB6D9;">Complexe Sportif Céline Dumerc<br>12 rue Verte, 18350 Nérondes</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+        <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #4FC6F5;">Contact</span>
+        <a href="mailto:bcn18350@gmail.com" style="color: #C9DCEE; text-decoration: none;">bcn18350@gmail.com</a>
+        <span>06 47 32 68 77 · 06 68 35 88 24</span>
+        <span style="color: #8FB6D9;">Avec le soutien de la FFBad</span>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(41, 171, 226, 0.2); padding: 16px 24px; text-align: center; font-size: 13px; color: #7FA3C4;">© Bad Club Nérondais — Saison 2026-2027</div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    narrow: typeof window !== 'undefined' && window.innerWidth < 1020,
+    menuOpen: false,
+  };
+
+  componentDidMount() {
+    this._r = () => {
+      const narrow = window.innerWidth < 1020;
+      if (narrow !== this.state.narrow) this.setState({ narrow, menuOpen: false });
+    };
+    window.addEventListener('resize', this._r);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._r);
+  }
+
+  renderVals() {
+    const active = 'Le Bureau';
+    const pages = [
+      ['Accueil', 'Accueil.dc.html'],
+      ['Le Club', 'Le Club.dc.html'],
+      ['Créneaux & Tarifs', 'Creneaux et Tarifs.dc.html'],
+      ['Actualités', 'Actualites.dc.html'],
+      ['Galerie', 'Galerie.dc.html'],
+      ['Le Bureau', 'Le Bureau.dc.html'],
+      ['Liens utiles', 'Liens utiles.dc.html'],
+      ['Contact', 'Contact.dc.html'],
+    ];
+    const navLinks = pages.map(([label, href]) => ({
+      label,
+      href,
+      color: label === active ? '#4FC6F5' : '#DCEAF7',
+      border: label === active ? '2px solid #F58220' : '2px solid transparent',
+    }));
+    const cyan = 'linear-gradient(135deg, #29ABE2, #1B7FB8)';
+    const orange = 'linear-gradient(135deg, #F58220, #E06A0A)';
+    const roster = [
+      ['Président', 'Julien Cousot', 'JC'],
+      ['Vice-président', 'Arnaud Cherrier', 'AC'],
+      ['Trésorière', 'Delphine Benedi', 'DB'],
+      ['Vice-trésorière', 'Valentine Copin', 'VC'],
+      ['Secrétaire', 'Muriel Orgeret', 'MO'],
+      ['Vice-secrétaire', 'Ludovic Horveno', 'LH'],
+    ];
+    const membres = roster.map(([role, name, initials], i) => {
+      const isCyan = i % 2 === 0;
+      const pending = name.indexOf('[') !== -1;
+      return {
+        role,
+        name,
+        initials,
+        pending,
+        bg: pending ? 'linear-gradient(135deg, #A4B8CA, #7A93AB)' : isCyan ? cyan : orange,
+        glow: pending ? 'rgba(122, 147, 171, 0.35)' : isCyan ? 'rgba(41, 171, 226, 0.35)' : 'rgba(245, 130, 32, 0.35)',
+        accent: isCyan ? '#29ABE2' : '#F58220',
+        border: pending ? '2px dashed #A4B8CA' : '1px solid #DCE8F2',
+      };
+    });
+    return {
+      navLinks,
+      membres,
+      showNav: !this.state.narrow,
+      showBurger: this.state.narrow,
+      menuOpen: this.state.narrow && this.state.menuOpen,
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #05070F; }
+    a { color: #29ABE2; } a:hover { color: #7FD4FF; }
+    @keyframes bcnOrbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes bcnOrbitRev { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+    @keyframes bcnFadeOut { 0% { opacity: 1; } 55% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
+    @keyframes bcnPulse { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.08); opacity: 1; } }
+  </style>
+</helmet>
+
+<div data-screen-label="Accueil" style="position: relative; width: 100vw; height: 100vh; min-height: 620px; overflow: hidden; background: radial-gradient(130% 90% at 50% 42%, #0D1B3E 0%, #0A1530 48%, #05070F 100%); font-family: 'Barlow', sans-serif; color: #FFFFFF;">
+
+  <!-- Scène : raquette + volant + explosion de particules -->
+  <x-import component-from-global-scope="bcn-scene" from="./home-scene.js?v=9" density="{{ densite }}" hint-size="100%,100%" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"></x-import>
+
+  <!-- Sections en orbite autour de l'impact (bureau) -->
+  <sc-if value="{{ showOrbit }}" hint-placeholder-val="{{ true }}">
+    <div style="position: absolute; left: 50%; top: 46%; width: 0; height: 0; z-index: 3; animation: {{ orbitAnim }}; animation-play-state: {{ orbitState }};">
+      <sc-for list="{{ sections }}" as="s" hint-placeholder-count="7">
+        <div style="position: absolute; left: 0; top: 0; width: 0; height: 0; transform: rotate({{ s.angle }}deg) translateY(-38vmin);">
+          <div style="width: 0; height: 0; animation: {{ orbitAnimRev }}; animation-play-state: {{ orbitState }};">
+            <div style="width: 0; height: 0; transform: rotate(-{{ s.angle }}deg);">
+              <div style="width: max-content; transform: translate(-50%, -50%);">
+              <a href="{{ s.href }}" onMouseEnter="{{ pauseOrbit }}" onMouseLeave="{{ resumeOrbit }}" style="display: flex; align-items: center; gap: 10px; padding: 12px 22px; background: rgba(9, 24, 52, 0.55); border: 1px solid rgba(41, 171, 226, 0.4); border-radius: 999px; color: #EAF6FF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 15px; white-space: nowrap; backdrop-filter: blur(6px); box-shadow: 0 0 18px rgba(41, 171, 226, 0.14); transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;" style-hover="transform: scale(1.14); border-color: #29ABE2; box-shadow: 0 0 36px rgba(41, 171, 226, 0.55); color: #FFFFFF; background: rgba(13, 40, 80, 0.85);">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: {{ s.dot }}; box-shadow: 0 0 10px {{ s.dot }}; flex: none;"></span>
+                <span>{{ s.label }}</span>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <!-- Version mobile : cercle remplacé par des pastilles cliquables -->
+  <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ false }}">
+    <div style="position: absolute; left: 50%; top: 44%; transform: translate(-50%, -50%); z-index: 3; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 92vw;">
+      <sc-for list="{{ sections }}" as="s" hint-placeholder-count="7">
+        <a href="{{ s.href }}" style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: rgba(9, 24, 52, 0.6); border: 1px solid rgba(41, 171, 226, 0.45); border-radius: 999px; color: #EAF6FF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; font-size: 13px; white-space: nowrap;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background: {{ s.dot }}; box-shadow: 0 0 8px {{ s.dot }}; flex: none;"></span>
+          <span>{{ s.label }}</span>
+        </a>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <!-- Barre haute : identité -->
+  <header style="position: absolute; top: 0; left: 0; right: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 28px; pointer-events: none;">
+    <div style="pointer-events: auto; display: flex; align-items: center; gap: 14px;">
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 0 24px rgba(41, 171, 226, 0.45); flex: none;">
+        <img src="assets/logo-bcn.jpg" alt="Logo B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: 3px; text-transform: uppercase;">Bad Club Nérondais</span>
+        <span style="font-size: 13px; color: #8FB6D9; letter-spacing: 1px;">B.C.N. 18 · Nérondes (Cher)</span>
+      </div>
+    </div>
+    <div style="pointer-events: auto; display: flex; align-items: center; gap: 10px; padding: 9px 18px; border: 1px solid rgba(41, 171, 226, 0.5); border-radius: 999px; background: rgba(9, 24, 52, 0.5); font-size: 14px; font-weight: 600; color: #9FE0FF; letter-spacing: 0.5px; white-space: nowrap;">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: #29ABE2; box-shadow: 0 0 10px #29ABE2; flex: none;"></span>
+      Saison 2026 · 2027
+    </div>
+  </header>
+
+  <!-- Premier plan : titre, slogan, badge, action -->
+  <div style="position: absolute; left: 0; right: 0; bottom: 4vh; z-index: 6; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding: 0 20px; pointer-events: none;">
+    <div style="font-family: 'Caveat', cursive; font-weight: 700; font-size: clamp(28px, 4vw, 42px); color: #4FC6F5; text-shadow: 0 0 22px rgba(41, 171, 226, 0.7); transform: rotate(-2deg);">Venez essayer !</div>
+    <h1 style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(34px, 6vw, 72px); letter-spacing: clamp(4px, 1vw, 14px); text-transform: uppercase; line-height: 1; text-shadow: 0 0 40px rgba(41, 171, 226, 0.35);">Badminton à Nérondes</h1>
+    <div style="width: 90px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #F58220 50%, #29ABE2 50%);"></div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
+      <a href="Creneaux et Tarifs.dc.html" style="pointer-events: auto; display: inline-flex; align-items: center; gap: 10px; padding: 14px 30px; border-radius: 999px; background: linear-gradient(135deg, #F58220, #E06A0A); color: #FFFFFF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 30px rgba(245, 130, 32, 0.5); transition: transform 0.2s ease, box-shadow 0.2s ease;" style-hover="transform: translateY(-2px) scale(1.04); box-shadow: 0 0 46px rgba(245, 130, 32, 0.8); color: #FFFFFF;">Nous rejoindre →</a>
+    </div>
+    <div style="font-size: 12.5px; letter-spacing: 2px; text-transform: uppercase; color: #5E7EA6;">Cliquez sur une section en orbite pour explorer le site</div>
+  </div>
+
+  <!-- Écran de chargement -->
+  <div style="position: absolute; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; background: radial-gradient(120% 90% at 50% 45%, #0D1B3E 0%, #05070F 75%); animation: bcnFadeOut 1.8s ease forwards; pointer-events: none;">
+    <div style="width: 104px; height: 104px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 0 60px rgba(41, 171, 226, 0.6); animation: bcnPulse 1.4s ease-in-out infinite;">
+      <img src="assets/logo-bcn.jpg" alt="B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
+    </div>
+    <div style="font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; font-size: 16px; color: #9FE0FF;">Bad Club Nérondais</div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;densiteParticules&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:2,&quot;min&quot;:0.3,&quot;max&quot;:2,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Scène d'accueil&quot;},&quot;vitesseOrbite&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:140,&quot;min&quot;:20,&quot;max&quot;:140,&quot;step&quot;:5,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Scène d'accueil&quot;}}">
+class Component extends DCLogic {
+  state = {
+    isMobile: typeof window !== 'undefined' && window.innerWidth < 760,
+    orbitPaused: false,
+  };
+
+  componentDidMount() {
+    this._onResize = () => {
+      const isMobile = window.innerWidth < 760;
+      if (isMobile !== this.state.isMobile) this.setState({ isMobile });
+    };
+    window.addEventListener('resize', this._onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+  }
+
+  renderVals() {
+    const pages = [
+      ['Le Club', 'Le Club.dc.html'],
+      ['Créneaux & Tarifs', 'Creneaux et Tarifs.dc.html'],
+      ['Actualités', 'Actualites.dc.html'],
+      ['Galerie', 'Galerie.dc.html'],
+      ['Le Bureau', 'Le Bureau.dc.html'],
+      ['Liens utiles', 'Liens utiles.dc.html'],
+      ['Contact', 'Contact.dc.html'],
+    ];
+    const sections = pages.map(([label, href], i) => ({
+      label,
+      href,
+      angle: Math.round((360 / pages.length) * i),
+      dot: i % 2 === 0 ? '#29ABE2' : '#F58220',
+    }));
+    const dur = this.props.vitesseOrbite ?? 70;
+    return {
+      sections,
+      showOrbit: !this.state.isMobile,
+      showGrid: this.state.isMobile,
+      orbitAnim: 'bcnOrbit ' + dur + 's linear infinite',
+      orbitAnimRev: 'bcnOrbitRev ' + dur + 's linear infinite',
+      orbitState: this.state.orbitPaused ? 'paused' : 'running',
+      pauseOrbit: () => this.setState({ orbitPaused: true }),
+      resumeOrbit: () => this.setState({ orbitPaused: false }),
+      densite: String(this.props.densiteParticules ?? 1),
+    };
+  }
+}
+</script>
+</body>
+</html>

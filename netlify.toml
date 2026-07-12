@@ -1,0 +1,3 @@
+# Site statique servi tel quel depuis la racine du repo (aucun build).
+[build]
+  publish = "."

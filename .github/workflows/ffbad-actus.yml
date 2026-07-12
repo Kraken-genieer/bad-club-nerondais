@@ -1,0 +1,40 @@
+# Robot d'actualites FFBad - a placer dans .github/workflows/ffbad-actus.yml
+# Lance le script 1x/jour, ecrit ffbad-actus.json et le commit si changement.
+# Netlify redeploie automatiquement au push.
+
+name: MAJ actus FFBad
+
+on:
+  schedule:
+    - cron: "0 5 * * *"     # tous les jours vers 07h00 (Paris, ete) / 06h00 (hiver)
+  workflow_dispatch: {}       # bouton "Run workflow" pour lancer a la main
+
+permissions:
+  contents: write             # necessaire pour que le bot puisse committer le JSON
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Recuperer les actualites FFBad
+        run: node scripts/fetch-ffbad.mjs
+        env:
+          FFBAD_OUT: ffbad-actus.json   # <-- adapter au dossier publie (voir README)
+
+      - name: Committer si changement
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ffbad-actus.json
+          if git diff --staged --quiet; then
+            echo "Pas de changement, rien a committer."
+          else
+            git commit -m "chore: mise a jour des actualites FFBad"
+            git push
+          fi
