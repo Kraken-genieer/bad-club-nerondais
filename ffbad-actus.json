@@ -1,7 +1,13 @@
 {
-  "maj": "2026-07-15T11:11:59.872Z",
+  "maj": "2026-07-16T11:20:59.897Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Incident en cours sur les sites MyFFBaD et ICBad (résolu)",
+      "extrait": "",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/incident-en-cours-sur-les-sites-myffbad-et-icbad-resolu",
+      "source": "FFBad"
+    },
     {
       "titre": "Palmarès inédit aux championnats de France de racketlon",
       "extrait": "Les 4 et 5 juillet 2026, l'ASL Robertsau a accueilli les 4èmes Championnats de France de Racketlon dans des conditions idéales. Marquée par les premiers sacres nationaux en simple de Damien André et P…",
@@ -30,12 +36,6 @@
       "titre": "Championnats d’Europe de Footbag à Madrid",
       "extrait": "La capitale espagnole a accueilli au Parque Casino de la Reina la 26° édition des Championnats d’Europe de Footbag. Organisées du 26 au 28 juin 2026, les compétitions de net et de freestyle n’ont pas…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-deurope-de-footbag-a-madrid",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Mouvement des joueurs pour la saison 2026-2027 - Partie 2",
-      "extrait": "",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/mouvement-des-joueurs-pour-la-saison-2026-2027-partie-2",
       "source": "FFBad"
     }
   ]
