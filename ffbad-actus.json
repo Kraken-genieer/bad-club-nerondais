@@ -1,7 +1,13 @@
 {
-  "maj": "2026-07-16T11:20:59.897Z",
+  "maj": "2026-07-17T11:00:11.888Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "[Fortes chaleurs] Mesure impact annulations compétitions et créneaux de pratique",
+      "extrait": "Depuis plusieurs semaines, le territoire hexagonal subit des vagues de fortes chaleurs voire caniculaires. Celles-ci ont pour conséquence des reports et/ou annulations de compétitions et créneaux d'en…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/fortes-chaleurs-mesure-impact-annulations-competitions-et-creneaux-de-pratique",
+      "source": "FFBad"
+    },
     {
       "titre": "Incident en cours sur les sites MyFFBaD et ICBad (résolu)",
       "extrait": "",
@@ -30,12 +36,6 @@
       "titre": "Les Championnats d'Europe Vétérans 2026 - Liste des qualifiés",
       "extrait": "La liste des joueuses, joueurs et paires pour les Championnats d'Europe Vétérans 2026 qui se dérouleront du 19 au 27 septembre 2026 à Cagliari est connue !",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/les-championnats-d-europe-veterans-2026-liste-des-qualifies",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Championnats d’Europe de Footbag à Madrid",
-      "extrait": "La capitale espagnole a accueilli au Parque Casino de la Reina la 26° édition des Championnats d’Europe de Footbag. Organisées du 26 au 28 juin 2026, les compétitions de net et de freestyle n’ont pas…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-deurope-de-footbag-a-madrid",
       "source": "FFBad"
     }
   ]
