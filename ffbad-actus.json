@@ -1,7 +1,13 @@
 {
-  "maj": "2026-07-20T07:53:03.784Z",
+  "maj": "2026-07-21T07:28:43.945Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Le récap' du 13 juin au 19 juillet",
+      "extrait": "Le badminton français continue de faire parler de lui sur la scène internationale. Une semaine marquée par le sacre de Christo POPOV au Japan Open, deux ans après la victoire d'Alex LANIER, confirme l…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/le-recap-du-13-juin-au-19-juillet",
+      "source": "FFBad"
+    },
     {
       "titre": "Japan Open : Christo POPOV s’offre son premier Super 750",
       "extrait": "Impérial tout au long de la semaine, Christo POPOV monte sur la première marche du podium à Tokyo, lors du Japan Open. Vainqueur de Koki WATANABE 21/11 21/19, le Français décroche son troisième titre…",
@@ -30,12 +36,6 @@
       "titre": "Championnats de France de Plumfoot simple et double",
       "extrait": "Étienne GASTINEAU, Lien Huong NGUYEN et Triet TO sont les grands vainqueurs des Championnats de France de Plumfoot, qui se sont déroulés au CREPS de Châtenay-Malabry les 20 et 21 juin.",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-de-france-de-plumfoot-simple-et-double",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Le récap' du 29 juin au 5 juillet",
-      "extrait": "Les Français étaient partout cette semaine : une 3ème place pour le duo MAIO/VILLEGER au Canada, la victoire pour BENAISSA/SOW en France, au Future Series de Nouvelle Aquitaine, une 2ème place pour Ro…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/le-recap-du-29-juin-au-5-juillet",
       "source": "FFBad"
     }
   ]
