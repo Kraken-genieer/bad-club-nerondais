@@ -1,7 +1,13 @@
 {
-  "maj": "2026-07-23T07:27:44.593Z",
+  "maj": "2026-07-24T07:26:15.658Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Le Club des 300 FFBaD lance son appel à candidatures",
+      "extrait": "La Fédération Française de Badminton ouvre les candidatures pour intégrer la première promotion du Club des 300 FFBaD, un programme d'accompagnement destiné à développer le leadership des femmes et à…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/le-club-des-300-ffbad-lance-son-appel-a-candidatures",
+      "source": "FFBad"
+    },
     {
       "titre": "LOB N°92",
       "extrait": "",
@@ -30,12 +36,6 @@
       "titre": "Incident en cours sur les sites MyFFBaD et ICBad (résolu)",
       "extrait": "",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/incident-en-cours-sur-les-sites-myffbad-et-icbad-resolu",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Palmarès inédit aux championnats de France de racketlon",
-      "extrait": "Les 4 et 5 juillet 2026, l'ASL Robertsau a accueilli les 4èmes Championnats de France de Racketlon dans des conditions idéales. Marquée par les premiers sacres nationaux en simple de Damien André et P…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/palmares-inedit-aux-championnats-de-france-de-racketlon",
       "source": "FFBad"
     }
   ]
