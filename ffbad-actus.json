@@ -1,7 +1,13 @@
 {
-  "maj": "2026-08-19T05:21:49.931Z",
+  "maj": "2026-08-20T05:22:30.869Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Stage Jeune para-badminton",
+      "extrait": "",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/stage-jeune-para-badminton",
+      "source": "FFBad"
+    },
     {
       "titre": "Le récap' du 20 au 26 juillet",
       "extrait": "Après le sacre de Christo POPOV à Tokyo, direction Changzhou pour les Bleus, où le Super 1000 chinois a offert son lot d'émotions. Toma Junior POPOV a signé la performance de la semaine en s'invitant…",
@@ -18,18 +24,6 @@
       "titre": "Le Club des 300 FFBaD lance son appel à candidatures",
       "extrait": "La Fédération Française de Badminton ouvre les candidatures pour intégrer la première promotion du Club des 300 FFBaD, un programme d'accompagnement destiné à développer le leadership des femmes et à…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/le-club-des-300-ffbad-lance-son-appel-a-candidatures",
-      "source": "FFBad"
-    },
-    {
-      "titre": "LOB N°92",
-      "extrait": "",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/lob-n92",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Le récap' du 13 juin au 19 juillet",
-      "extrait": "Le badminton français continue de faire parler de lui sur la scène internationale. Une semaine marquée par le sacre de Christo POPOV au Japan Open, deux ans après la victoire d'Alex LANIER, confirme l…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/le-recap-du-13-juin-au-19-juillet",
       "source": "FFBad"
     }
   ]
