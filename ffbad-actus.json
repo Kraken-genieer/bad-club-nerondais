@@ -1,7 +1,13 @@
 {
-  "maj": "2026-08-27T16:01:09.347Z",
+  "maj": "2026-08-28T17:04:01.948Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Une reconnaissance historique : les diplômes de badminton français valides à l'international",
+      "extrait": "La BWF a officiellement reconnu l'équivalence des diplômes français (CQP et DEJEPS) avec ses standards internationaux. Une décision historique qui valorise l'excellence de notre filière d'encadrement…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/une-reconnaissance-historique-les-diplomes-de-badminton-francais-valides-a-l-international",
+      "source": "FFBad"
+    },
     {
       "titre": "Guide du Badminton",
       "extrait": "Le Guide du Badminton complet de la saison 2026/2027 est en ligne. Communément appelé « le Guide du Bad », il est élaboré et diffusé annuellement par la FFBaD.",
@@ -12,12 +18,6 @@
       "titre": "Lancement du DESJEPS Badminton - 2026/2028",
       "extrait": "La prochaine formation du DESJEPS Badminton aura lieu du 09 décembre 2026 au 16 mars 2028. Consultez le dossier d'inscription pour plus d'informations.",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/lancement-du-desjeps-badminton-2026-2028",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Stage Jeune para-badminton",
-      "extrait": "",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/stage-jeune-para-badminton",
       "source": "FFBad"
     }
   ]
