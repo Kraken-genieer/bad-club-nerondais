@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-04T09:13:05.541Z",
+  "maj": "2026-09-05T08:43:37.749Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Championnats du Monde U19 : la sélection officielle",
+      "extrait": "Après le titre européen de Mady SOW et la pluie de médailles des Bleuets aux Championnats d'Europe en août, les jeunes Tricolores seront attendus aux Championnats du Monde U19, du 12 au 17 octobre, au…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-du-monde-u19-la-selection-officielle",
+      "source": "FFBad"
+    },
     {
       "titre": "Campagne de rentrée 2026 : Passez en mode CLUB avec la FFBaD !",
       "extrait": "À l’aube d’une nouvelle saison sportive, la Fédération Française de Badminton dévoile sa toute nouvelle campagne de communication. Axée sur le slogan fort et rassembleur « Passe en mode CLUB », cette…",
@@ -15,15 +21,15 @@
       "source": "FFBad"
     },
     {
-      "titre": "Guide du Badminton",
-      "extrait": "Le Guide du Badminton complet de la saison 2026/2027 est en ligne. Communément appelé « le Guide du Bad », il est élaboré et diffusé annuellement par la FFBaD.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/guide-du-badminton",
-      "source": "FFBad"
-    },
-    {
       "titre": "Une reconnaissance historique : les diplômes de badminton français valides à l'international",
       "extrait": "La BWF a officiellement reconnu l'équivalence des diplômes français (CQP et DEJEPS) avec ses standards internationaux. Une décision historique qui valorise l'excellence de notre filière d'encadrement…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/une-reconnaissance-historique-les-diplomes-de-badminton-francais-valides-a-l-international",
+      "source": "FFBad"
+    },
+    {
+      "titre": "Guide du Badminton",
+      "extrait": "Le Guide du Badminton complet de la saison 2026/2027 est en ligne. Communément appelé « le Guide du Bad », il est élaboré et diffusé annuellement par la FFBaD.",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/guide-du-badminton",
       "source": "FFBad"
     },
     {
