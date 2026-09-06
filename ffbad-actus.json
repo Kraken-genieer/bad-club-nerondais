@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-05T08:43:37.749Z",
+  "maj": "2026-09-06T09:04:42.429Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "China Masters : Christo POPOV demi-finaliste",
+      "extrait": "Battu en demi-finale des Masters de Chine, le parcours de Christo POPOV s’est arrêté ce samedi aux portes de la finale. Opposé au Hongkongais LEE Cheuk Yu (n°25), le Français s’est incliné en deux set…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/china-masters-christo-popov-demi-finaliste",
+      "source": "FFBad"
+    },
     {
       "titre": "Championnats du Monde U19 : la sélection officielle",
       "extrait": "Après le titre européen de Mady SOW et la pluie de médailles des Bleuets aux Championnats d'Europe en août, les jeunes Tricolores seront attendus aux Championnats du Monde U19, du 12 au 17 octobre, au…",
@@ -21,21 +27,15 @@
       "source": "FFBad"
     },
     {
-      "titre": "Une reconnaissance historique : les diplômes de badminton français valides à l'international",
-      "extrait": "La BWF a officiellement reconnu l'équivalence des diplômes français (CQP et DEJEPS) avec ses standards internationaux. Une décision historique qui valorise l'excellence de notre filière d'encadrement…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/une-reconnaissance-historique-les-diplomes-de-badminton-francais-valides-a-l-international",
-      "source": "FFBad"
-    },
-    {
       "titre": "Guide du Badminton",
       "extrait": "Le Guide du Badminton complet de la saison 2026/2027 est en ligne. Communément appelé « le Guide du Bad », il est élaboré et diffusé annuellement par la FFBaD.",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/guide-du-badminton",
       "source": "FFBad"
     },
     {
-      "titre": "Lancement du DESJEPS Badminton - 2026/2028",
-      "extrait": "La prochaine formation du DESJEPS Badminton aura lieu du 09 décembre 2026 au 16 mars 2028. Consultez le dossier d'inscription pour plus d'informations.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/lancement-du-desjeps-badminton-2026-2028",
+      "titre": "Une reconnaissance historique : les diplômes de badminton français valides à l'international",
+      "extrait": "La BWF a officiellement reconnu l'équivalence des diplômes français (CQP et DEJEPS) avec ses standards internationaux. Une décision historique qui valorise l'excellence de notre filière d'encadrement…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/une-reconnaissance-historique-les-diplomes-de-badminton-francais-valides-a-l-international",
       "source": "FFBad"
     }
   ]
