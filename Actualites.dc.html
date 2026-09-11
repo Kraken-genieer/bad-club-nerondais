@@ -11,10 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
-  <!-- Le SDK Facebook n'est PLUS charge ici : il depose des cookies tiers des
-       l'ouverture de la page, avant tout consentement du visiteur. Il est
-       desormais charge a la demande, au clic sur le bouton d'affichage du fil
-       (voir _chargerFb dans le script en bas de page). -->
+  <!-- Aucun SDK Facebook sur cette page. Le fil est integre via l'iframe officielle
+       (voir fbIframe dans le script en bas de page), inseree uniquement apres le
+       consentement du visiteur : rien n'est charge avant, donc aucun cookie tiers.
+       Le SDK JavaScript a ete abandonne le 11/09/2026 : frequemment bloque par les
+       extensions anti-pub, et dependant de l'ordre de rendu du composant. -->
   <style>
     html, body { margin: 0; padding: 0; background: #F3F7FB; }
     a { color: #1B7FB8; } a:hover { color: #F58220; }
@@ -107,7 +108,7 @@
           <div style="background: #0A2540; color: #FFFFFF; border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;">
             <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #4FC6F5;">Suivez le club en direct</span>
             <span style="font-size: 16px; line-height: 1.6; color: #B9D4EA;">Résultats, soirées, tournois, photos des séances : tout se passe sur la page Facebook du Bad Club Nérondais.</span>
-            <a href="https://www.facebook.com/61594056129520" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 6px; display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px; background: linear-gradient(135deg, #29ABE2, #1B7FB8); color: #FFFFFF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase;" style-hover="transform: translateY(-2px); color: #FFFFFF;">Ouvrir la page Facebook →</a>
+            <a href="https://www.facebook.com/BadClubNerondais" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 6px; display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px; background: linear-gradient(135deg, #29ABE2, #1B7FB8); color: #FFFFFF; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase;" style-hover="transform: translateY(-2px); color: #FFFFFF;">Ouvrir la page Facebook →</a>
           </div>
           <div style="background: #FFFFFF; border: 1px solid #DCE8F2; border-radius: 20px; padding: 26px 28px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06);">
             <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #F58220;">Prochain rendez-vous</span>
@@ -149,7 +150,7 @@
           <img src="assets/logo-bcn.jpg" alt="Logo B.C.N. 18" style="width: 88%; height: 88%; object-fit: contain;">
         </span>
         <span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Bad Club Nérondais</span>
-        <a href="https://www.facebook.com/61594056129520" target="_blank" rel="noopener" style="color: #4FC6F5; font-weight: 600; text-decoration: none;">Suivez-nous sur Facebook →</a>
+        <a href="https://www.facebook.com/BadClubNerondais" target="_blank" rel="noopener" style="color: #4FC6F5; font-weight: 600; text-decoration: none;">Suivez-nous sur Facebook →</a>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
         <span style="font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #4FC6F5;">Créneaux</span>
@@ -184,7 +185,7 @@ class Component extends DCLogic {
 
   // Page Facebook officielle du club. Definie ICI et nulle part ailleurs dans cette
   // page : en cas de changement d'adresse, une seule ligne a modifier.
-  fbUrl = 'https://www.facebook.com/61594056129520';
+  fbUrl = 'https://www.facebook.com/BadClubNerondais';
 
   // Adresse du cadre fourni par Facebook. Aucun script tiers n'est charge :
   // l'iframe n'apparait dans le DOM qu'une fois fbOn passe a true, donc apres
