@@ -94,13 +94,12 @@
           </sc-if>
 
           <sc-if value="{{ fbOn }}" hint-placeholder-val="{{ false }}">
-            <div style="display: flex; flex-direction: column; gap: 14px; align-items: center;">
-              <div class="fb-page" data-href="{{ fbUrl }}" data-tabs="timeline" data-width="500" data-height="640" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-                <blockquote cite="{{ fbUrl }}">
-                  <a href="{{ fbUrl }}">Bad Club Nérondais</a>
-                </blockquote>
-              </div>
-              <span style="font-size: 13px; color: #7A93AB; text-align: center;">Fil Facebook officiel du club — si le widget ne s'affiche pas (bloqueur de pub, connexion), utilisez le lien ci-contre.</span>
+            <div style="display: flex; flex-direction: column; gap: 14px; align-items: center; width: 100%;">
+              <!-- Cadre fourni par Facebook, insere directement. On n'utilise plus le
+                   SDK JavaScript (connect.facebook.net) : il est frequemment bloque par
+                   les extensions anti-pub et dependait de l'ordre de rendu du composant. -->
+              <iframe src="{{ fbIframe }}" title="Fil Facebook du Bad Club Nérondais" width="500" height="640" style="border: none; overflow: hidden; max-width: 100%; border-radius: 12px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+              <span style="font-size: 13px; color: #7A93AB; text-align: center;">Fil Facebook officiel du club — s'il ne s'affiche pas (bloqueur de publicité), utilisez le bouton ci-contre.</span>
             </div>
           </sc-if>
         </div>
@@ -187,33 +186,25 @@ class Component extends DCLogic {
   // page : en cas de changement d'adresse, une seule ligne a modifier.
   fbUrl = 'https://www.facebook.com/61594056129520';
 
-  // Charge le SDK Facebook a la demande. Rien n'est telecharge tant que le
-  // visiteur n'a pas clique : pas de cookie tiers depose a son insu.
-  _chargerFb() {
-    if (window.FB && window.FB.XFBML) { window.FB.XFBML.parse(); return; }
-    if (document.getElementById('fb-sdk')) return;
-    window.fbAsyncInit = () => { window.FB.init({ xfbml: true, version: 'v19.0' }); };
-    const s = document.createElement('script');
-    s.id = 'fb-sdk';
-    s.src = 'https://connect.facebook.net/fr_FR/sdk.js';
-    s.async = true; s.defer = true; s.crossOrigin = 'anonymous';
-    document.body.appendChild(s);
+  // Adresse du cadre fourni par Facebook. Aucun script tiers n'est charge :
+  // l'iframe n'apparait dans le DOM qu'une fois fbOn passe a true, donc apres
+  // le consentement explicite du visiteur.
+  get fbIframe() {
+    return 'https://www.facebook.com/plugins/page.php?href=' + encodeURIComponent(this.fbUrl)
+      + '&tabs=timeline&width=500&height=640&small_header=true&adapt_container_width=true'
+      + '&hide_cover=false&show_facepile=false&locale=fr_FR';
   }
 
   _activerFb() {
     // Le choix est memorise pour ne pas redemander a chaque visite.
     try { localStorage.setItem('bcn-fb-ok', '1'); } catch (e) { /* navigation privee */ }
     this.setState({ fbOn: true });
-    setTimeout(() => this._chargerFb(), 30);
   }
 
   componentDidMount() {
     // Visiteur ayant deja accepte lors d'une precedente visite : on affiche directement.
     try {
-      if (localStorage.getItem('bcn-fb-ok') === '1') {
-        this.setState({ fbOn: true });
-        setTimeout(() => this._chargerFb(), 30);
-      }
+      if (localStorage.getItem('bcn-fb-ok') === '1') this.setState({ fbOn: true });
     } catch (e) { /* localStorage indisponible : on reste sur le bouton */ }
 
     this._r = () => {
@@ -235,14 +226,9 @@ class Component extends DCLogic {
   }
 
   _setTab(tab) {
+    // Plus rien de special a faire au changement d'onglet : l'iframe Facebook se
+    // recharge d'elle-meme quand elle revient dans le DOM.
     this.setState({ tab });
-    // Re-parse le widget quand l'onglet club revient, mais seulement si le
-    // visiteur a accepte : sinon il n'y a rien a parser et surtout rien a charger.
-    if (tab === 'club' && this.state.fbOn) {
-      setTimeout(() => {
-        if (window.FB && window.FB.XFBML) window.FB.XFBML.parse();
-      }, 80);
-    }
   }
 
   renderVals() {
@@ -305,6 +291,7 @@ class Component extends DCLogic {
       ffbadCards,
       ffbadNote,
       fbUrl: this.fbUrl,
+      fbIframe: this.fbIframe,
       fbOn: this.state.fbOn,
       fbOff: !this.state.fbOn,
       activerFb: () => this._activerFb(),
