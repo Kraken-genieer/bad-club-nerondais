@@ -1,3 +1,21 @@
 # Site statique servi tel quel depuis la racine du repo (aucun build).
 [build]
   publish = "."
+
+# Adresse courte imprimee sur les flyers et affiches : bcn18.fr/licence
+# Elle mene a la page Creneaux et Tarifs, qui porte le bouton d'adhesion FFBad
+# et le telechargement du reglement interieur.
+# Interet : le QR code deja imprime restera valable meme si la page cible est un
+# jour renommee ou deplacee, il suffira de changer la ligne "to" ci-dessous.
+[[redirects]]
+  from = "/licence"
+  to = "/Creneaux%20et%20Tarifs.dc.html"
+  status = 301
+  force = true
+
+# Variante, au cas ou quelqu'un la tape de memoire.
+[[redirects]]
+  from = "/adherer"
+  to = "/Creneaux%20et%20Tarifs.dc.html"
+  status = 301
+  force = true
