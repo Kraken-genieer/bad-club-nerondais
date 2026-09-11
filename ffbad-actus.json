@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-10T09:17:57.214Z",
+  "maj": "2026-09-11T09:17:01.682Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Top 12 : Le Top 12 fait son retour !",
+      "extrait": "Les interclubs nationaux reprennent du service ce samedi 19 septembre ! L’occasion de revoir les meilleurs joueurs français, et internationaux, à l'œuvre dans une nouvelle formule. En Top 12, la premi…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-top-12-fait-son-retour",
+      "source": "FFBad"
+    },
     {
       "titre": "« Septembre bouge » : mobilisons tout le réseau badminton !",
       "extrait": "La rentrée sportive constitue chaque année un moment clé pour le développement de notre discipline, c’est pourquoi la Fédération Française de Badminton s’engage avec le ministère des sports et le mini…",
@@ -30,12 +36,6 @@
       "titre": "Jeux Méditerranéens 2026 : 4 médailles pour les Tricolores en Italie",
       "extrait": "Au terme de six jours de compétition, l’équipe de France repart d’Italie avec un bilan positif marqué par 2 médailles d’argent et 2 médailles de bronze.",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/jeux-mediterraneens-2026-4-medailles-pour-les-tricolores-en-italie",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Une reconnaissance historique : les diplômes de badminton français valides à l'international",
-      "extrait": "La BWF a officiellement reconnu l'équivalence des diplômes français (CQP et DEJEPS) avec ses standards internationaux. Une décision historique qui valorise l'excellence de notre filière d'encadrement…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/une-reconnaissance-historique-les-diplomes-de-badminton-francais-valides-a-l-international",
       "source": "FFBad"
     }
   ]
