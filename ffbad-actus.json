@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-11T09:17:01.682Z",
+  "maj": "2026-09-12T08:56:57.943Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "L’ÉTÉ DES DISCIPLINES ASSOCIEES",
+      "extrait": "Entre stage de préparation, championnats du monde Racketlon et de Footbag , le mois d'août a été riche en médailles pour les disciplines associées. Retour sur les principaux temps forts.",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/lete-des-disciplines-associees",
+      "source": "FFBad"
+    },
     {
       "titre": "Top 12 : Le Top 12 fait son retour !",
       "extrait": "Les interclubs nationaux reprennent du service ce samedi 19 septembre ! L’occasion de revoir les meilleurs joueurs français, et internationaux, à l'œuvre dans une nouvelle formule. En Top 12, la premi…",
@@ -30,12 +36,6 @@
       "titre": "Campagne de rentrée 2026 : Passez en mode CLUB avec la FFBaD !",
       "extrait": "À l’aube d’une nouvelle saison sportive, la Fédération Française de Badminton dévoile sa toute nouvelle campagne de communication. Axée sur le slogan fort et rassembleur « Passe en mode CLUB », cette…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/campagne-de-rentree-2026-passez-en-mode-club-avec-la-ffbad",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Jeux Méditerranéens 2026 : 4 médailles pour les Tricolores en Italie",
-      "extrait": "Au terme de six jours de compétition, l’équipe de France repart d’Italie avec un bilan positif marqué par 2 médailles d’argent et 2 médailles de bronze.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/jeux-mediterraneens-2026-4-medailles-pour-les-tricolores-en-italie",
       "source": "FFBad"
     }
   ]
