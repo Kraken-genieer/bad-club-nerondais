@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-20T09:31:58.683Z",
+  "maj": "2026-09-21T10:19:20.827Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "La Junior Academy 2026-2027 fait sa rentrée",
+      "extrait": "Ce samedi 19 septembre 2026, les jeunes et les tuteurs de la Junior Academy se sont donnés rendez-vous à Paris pour le lancement de cette nouvelle édition ! Une journée sous le signe de la convivialit…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/la-junior-academy-2026-2027-fait-sa-rentree",
+      "source": "FFBad"
+    },
     {
       "titre": "Les Yonex IFB arrivent dans 1 mois !",
       "extrait": "Ils seront plus de 200 joueurs du monde entier à retrouver les courts parisiens le mois prochain ! Affrontements de très haut niveau, présence des Champions du Monde en titre, délégation française en…",
@@ -21,21 +27,15 @@
       "source": "FFBad"
     },
     {
-      "titre": "Top 12 : Le programme de la première journée",
-      "extrait": "La saison 2026-2027 des championnats interclubs nationaux débutent ce samedi ! Notamment marquée par l’application des règles de la réforme du championnat des interclubs nationaux, cette première jour…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-programme-de-la-premiere-journee",
-      "source": "FFBad"
-    },
-    {
       "titre": "Concours des plus belles affiches de Badminton : les lauréats sont connus",
       "extrait": "Lancé en juin 2025, le premier concours « Les 10 plus belles affiches de badminton et disciplines associées » avait pour ambition de mettre en lumière le talent artistique de nos clubs à travers les a…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/concours-des-plus-belles-affiches-de-badminton-les-laureats-sont-connus",
       "source": "FFBad"
     },
     {
-      "titre": "L’ÉTÉ DES DISCIPLINES ASSOCIEES",
-      "extrait": "Entre stage de préparation, championnats du monde Racketlon et de Footbag , le mois d'août a été riche en médailles pour les disciplines associées. Retour sur les principaux temps forts.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/lete-des-disciplines-associees",
+      "titre": "Top 12 : Le programme de la première journée",
+      "extrait": "La saison 2026-2027 des championnats interclubs nationaux débutent ce samedi ! Notamment marquée par l’application des règles de la réforme du championnat des interclubs nationaux, cette première jour…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-programme-de-la-premiere-journee",
       "source": "FFBad"
     }
   ]
