@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-24T09:38:33.924Z",
+  "maj": "2026-09-25T09:56:11.145Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Cap sur le 40 ème Téléthon",
+      "extrait": "Le Téléthon 2026 aura lieu les vendredi 4 et samedi 5 décembre. Chaque premier week-end de décembre, ce sont 260 000 bénévoles mobilisés, 13 000 communes engagées et 59 000 associations locales qui fo…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/cap-sur-le-40-eme-telethon",
+      "source": "FFBad"
+    },
     {
       "titre": "Etape du circuit para-bad 2026 - 2027",
       "extrait": "La FFBaD est heureuse de vous présenter les nouvelles étapes du Circuit Para-Badminton pour la saison 2026-2027 ! Cette saison, 9 étapes seront organisées en France métropolitaine. Elles sont ouvertes…",
@@ -30,12 +36,6 @@
       "titre": "Championnats d’Europe Vétérans : Plus de 220 Français présents en Italie",
       "extrait": "Du 19 au 27 septembre 2026, Cagliari, en Italie, accueille les Championnats d’Europe Vétérans. Plus de 220 joueuses et joueurs français seront au rendez-vous pour porter les couleurs tricolores face a…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-deurope-veterans-plus-de-220-francais-presents-en-italie",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Concours des plus belles affiches de Badminton : les lauréats sont connus",
-      "extrait": "Lancé en juin 2025, le premier concours « Les 10 plus belles affiches de badminton et disciplines associées » avait pour ambition de mettre en lumière le talent artistique de nos clubs à travers les a…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/concours-des-plus-belles-affiches-de-badminton-les-laureats-sont-connus",
       "source": "FFBad"
     }
   ]
