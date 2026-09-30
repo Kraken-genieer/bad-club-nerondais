@@ -1,17 +1,23 @@
 {
-  "maj": "2026-09-29T10:59:34.944Z",
+  "maj": "2026-09-30T10:49:49.835Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Les compétitions inclusives",
+      "extrait": "Afin de rendre la pratique compétitive plus accessible aux personnes en situation de handicap (PSH), la Fédération Française de Badminton lance une expérimentation.",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/les-competitions-inclusives",
+      "source": "FFBad"
+    },
+    {
+      "titre": "La FFBaD au Sénégal : former les officiels techniques en vue de Dakar 2026",
+      "extrait": "Dans le cadre du dispositif « Coopération sportive internationale 2026 », soutenu par le Ministère des Sports, de la Jeunesse et de la Vie associative, la FFBaD porte le projet de former les officiels…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/la-ffbad-au-senegal-former-les-officiels-techniques-en-vue-de-dakar-2026",
+      "source": "FFBad"
+    },
     {
       "titre": "Stage de para-badminton",
       "extrait": "Du 25 au 27 septembre 2026, un stage de para-badminton s’est tenu au CREPS de Nantes. À cette occasion, 25 joueurs en situation de handicap moteur, ainsi que des joueurs sourds ou malentendants, se so…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/stage-de-para-badminton",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Etape du circuit para-bad 2026 - 2027",
-      "extrait": "La FFBaD est heureuse de vous présenter les nouvelles étapes du Circuit Para-Badminton pour la saison 2026-2027 ! Cette saison, 9 étapes seront organisées en France métropolitaine. Elles sont ouvertes…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/etape-du-circuit-para-bad-2026-2027",
       "source": "FFBad"
     },
     {
@@ -21,21 +27,15 @@
       "source": "FFBad"
     },
     {
+      "titre": "Etape du circuit para-bad 2026 - 2027",
+      "extrait": "La FFBaD est heureuse de vous présenter les nouvelles étapes du Circuit Para-Badminton pour la saison 2026-2027 ! Cette saison, 9 étapes seront organisées en France métropolitaine. Elles sont ouvertes…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/etape-du-circuit-para-bad-2026-2027",
+      "source": "FFBad"
+    },
+    {
       "titre": "La Junior Academy 2026-2027 fait sa rentrée",
       "extrait": "Ce samedi 19 septembre 2026, les jeunes et les tuteurs de la Junior Academy se sont donnés rendez-vous à Paris pour le lancement de cette nouvelle édition ! Une journée sous le signe de la convivialit…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/la-junior-academy-2026-2027-fait-sa-rentree",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Les Yonex IFB arrivent dans 1 mois !",
-      "extrait": "Ils seront plus de 200 joueurs du monde entier à retrouver les courts parisiens le mois prochain ! Affrontements de très haut niveau, présence des Champions du Monde en titre, délégation française en…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/les-yonex-ifb-arrivent-dans-1-mois",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Top 12 | J1 : Chambly et Fos-sur-Mer, début de saison parfait !",
-      "extrait": "La première rencontre du championnat de Top 12 a rendu son verdict en fin de journée. Le tenant du titre s’est imposé, tout comme Chambly, Fos-sur-Mer, Mulhouse et Saint-Maur-des-Fossés.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-j1-chambly-et-fos-sur-mer-debut-de-saison-parfait",
       "source": "FFBad"
     }
   ]
