@@ -1,7 +1,13 @@
 {
-  "maj": "2026-09-30T10:49:49.835Z",
+  "maj": "2026-10-01T11:16:32.439Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Top 12 : Le programme de la deuxième journée",
+      "extrait": "Lancé il y a deux semaines, le championnat de Top 12 est de retour ce samedi à l’occasion de la deuxième journée. Entre volonté de confirmer ou pour débloquer son compteur de victoire, les six rencont…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-programme-de-la-deuxieme-journee",
+      "source": "FFBad"
+    },
     {
       "titre": "Les compétitions inclusives",
       "extrait": "Afin de rendre la pratique compétitive plus accessible aux personnes en situation de handicap (PSH), la Fédération Française de Badminton lance une expérimentation.",
@@ -21,21 +27,15 @@
       "source": "FFBad"
     },
     {
-      "titre": "Cap sur le 40 ème Téléthon",
-      "extrait": "Le Téléthon 2026 aura lieu les vendredi 4 et samedi 5 décembre. Chaque premier week-end de décembre, ce sont 260 000 bénévoles mobilisés, 13 000 communes engagées et 59 000 associations locales qui fo…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/cap-sur-le-40-eme-telethon",
-      "source": "FFBad"
-    },
-    {
       "titre": "Etape du circuit para-bad 2026 - 2027",
       "extrait": "La FFBaD est heureuse de vous présenter les nouvelles étapes du Circuit Para-Badminton pour la saison 2026-2027 ! Cette saison, 9 étapes seront organisées en France métropolitaine. Elles sont ouvertes…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/etape-du-circuit-para-bad-2026-2027",
       "source": "FFBad"
     },
     {
-      "titre": "La Junior Academy 2026-2027 fait sa rentrée",
-      "extrait": "Ce samedi 19 septembre 2026, les jeunes et les tuteurs de la Junior Academy se sont donnés rendez-vous à Paris pour le lancement de cette nouvelle édition ! Une journée sous le signe de la convivialit…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/la-junior-academy-2026-2027-fait-sa-rentree",
+      "titre": "Cap sur le 40 ème Téléthon",
+      "extrait": "Le Téléthon 2026 aura lieu les vendredi 4 et samedi 5 décembre. Chaque premier week-end de décembre, ce sont 260 000 bénévoles mobilisés, 13 000 communes engagées et 59 000 associations locales qui fo…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/cap-sur-le-40-eme-telethon",
       "source": "FFBad"
     }
   ]
