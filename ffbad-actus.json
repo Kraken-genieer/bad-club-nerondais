@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-02T10:48:49.138Z",
+  "maj": "2026-10-03T10:08:27.349Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Championnats d’Europe Vétérans : 8 titres et 6 médailles pour les tricolores",
+      "extrait": "Du 19 au 27 septembre, plus de 220 joueuses et joueurs français ont porté haut les couleurs de la France à Cagliari, en Italie, à l’occasion des Championnats d’Europe Vétérans 2026.",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-deurope-veterans-8-titres-et-6-medailles-pour-les-tricolores",
+      "source": "FFBad"
+    },
     {
       "titre": "Jeux Olympiques de la Jeunesse : la sélection officielle",
       "extrait": "Du dimanche 1er au jeudi 5 novembre, à l'occasion de la 4ème édition des Jeux olympiques de la Jeunesse d'été, 2 jeunes athlètes français seront présents à Dakar, au Sénégal, pour défendre les couleur…",
@@ -9,15 +15,15 @@
       "source": "FFBad"
     },
     {
-      "titre": "Top 12 : Le programme de la deuxième journée",
-      "extrait": "Lancé il y a deux semaines, le championnat de Top 12 est de retour ce samedi à l’occasion de la deuxième journée. Entre volonté de confirmer ou pour débloquer son compteur de victoire, les six rencont…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-programme-de-la-deuxieme-journee",
-      "source": "FFBad"
-    },
-    {
       "titre": "Les compétitions inclusives",
       "extrait": "Afin de rendre la pratique compétitive plus accessible aux personnes en situation de handicap (PSH), la Fédération Française de Badminton lance une expérimentation.",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/les-competitions-inclusives",
+      "source": "FFBad"
+    },
+    {
+      "titre": "Top 12 : Le programme de la deuxième journée",
+      "extrait": "Lancé il y a deux semaines, le championnat de Top 12 est de retour ce samedi à l’occasion de la deuxième journée. Entre volonté de confirmer ou pour débloquer son compteur de victoire, les six rencont…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-programme-de-la-deuxieme-journee",
       "source": "FFBad"
     },
     {
@@ -30,12 +36,6 @@
       "titre": "Circuit Elite : le classement de la première étape",
       "extrait": "",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/circuit-elite-le-classement-de-la-premiere-etape",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Stage de para-badminton",
-      "extrait": "Du 25 au 27 septembre 2026, un stage de para-badminton s’est tenu au CREPS de Nantes. À cette occasion, 25 joueurs en situation de handicap moteur, ainsi que des joueurs sourds ou malentendants, se so…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/stage-de-para-badminton",
       "source": "FFBad"
     }
   ]
