@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-03T10:08:27.349Z",
+  "maj": "2026-10-04T10:49:35.397Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Top 12 | J2 : L’AUCB contrarie Chambly, Fos-sur-Mer confirme",
+      "extrait": "Deuxième journée de compétition en Top 12 ce samedi ! À domicile, Aix-en-Provence est parvenu à tenir en échec Chambly alors que Strasbourg l’emporte à nouveau. Dans la poule 2, Fos-sur-Mer et Mulhous…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-j2-laucb-contrarie-chambly-fos-sur-mer-confirme",
+      "source": "FFBad"
+    },
     {
       "titre": "Championnats d’Europe Vétérans : 8 titres et 6 médailles pour les tricolores",
       "extrait": "Du 19 au 27 septembre, plus de 220 joueuses et joueurs français ont porté haut les couleurs de la France à Cagliari, en Italie, à l’occasion des Championnats d’Europe Vétérans 2026.",
@@ -15,27 +21,21 @@
       "source": "FFBad"
     },
     {
-      "titre": "Les compétitions inclusives",
-      "extrait": "Afin de rendre la pratique compétitive plus accessible aux personnes en situation de handicap (PSH), la Fédération Française de Badminton lance une expérimentation.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/les-competitions-inclusives",
-      "source": "FFBad"
-    },
-    {
       "titre": "Top 12 : Le programme de la deuxième journée",
       "extrait": "Lancé il y a deux semaines, le championnat de Top 12 est de retour ce samedi à l’occasion de la deuxième journée. Entre volonté de confirmer ou pour débloquer son compteur de victoire, les six rencont…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-le-programme-de-la-deuxieme-journee",
       "source": "FFBad"
     },
     {
-      "titre": "La FFBaD au Sénégal : former les officiels techniques en vue de Dakar 2026",
-      "extrait": "Dans le cadre du dispositif « Coopération sportive internationale 2026 », soutenu par le Ministère des Sports, de la Jeunesse et de la Vie associative, la FFBaD porte le projet de former les officiels…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/la-ffbad-au-senegal-former-les-officiels-techniques-en-vue-de-dakar-2026",
+      "titre": "Les compétitions inclusives",
+      "extrait": "Afin de rendre la pratique compétitive plus accessible aux personnes en situation de handicap (PSH), la Fédération Française de Badminton lance une expérimentation.",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/les-competitions-inclusives",
       "source": "FFBad"
     },
     {
-      "titre": "Circuit Elite : le classement de la première étape",
-      "extrait": "",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/circuit-elite-le-classement-de-la-premiere-etape",
+      "titre": "La FFBaD au Sénégal : former les officiels techniques en vue de Dakar 2026",
+      "extrait": "Dans le cadre du dispositif « Coopération sportive internationale 2026 », soutenu par le Ministère des Sports, de la Jeunesse et de la Vie associative, la FFBaD porte le projet de former les officiels…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/la-ffbad-au-senegal-former-les-officiels-techniques-en-vue-de-dakar-2026",
       "source": "FFBad"
     }
   ]
