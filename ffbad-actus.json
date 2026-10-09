@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-08T11:42:15.778Z",
+  "maj": "2026-10-09T11:35:32.258Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Forfait sur une compétition : 5 jours pour déposer son justificatif sur MyFFBaD",
+      "extrait": "Un licencié inscrit à une compétition et qui ne s'y présente pas peut justifier son absence en ligne, depuis la rubrique « Mes justificatifs » de MyFFBaD. Un tutoriel pas à pas, publié détaille la dém…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/forfait-sur-une-competition-5-jours-pour-deposer-son-justificatif-sur-myffbad",
+      "source": "FFBad"
+    },
     {
       "titre": "Circuit Fédéral Vétérans - Etape 1",
       "extrait": "",
@@ -15,27 +21,21 @@
       "source": "FFBad"
     },
     {
-      "titre": "Jeux Olympiques de la Jeunesse : la sélection officielle",
-      "extrait": "Du dimanche 1er au jeudi 5 novembre, à l'occasion de la 4ème édition des Jeux olympiques de la Jeunesse d'été, 2 jeunes athlètes français seront présents à Dakar, au Sénégal, pour défendre les couleur…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/jeux-olympiques-de-la-jeunesse-la-selection-officielle",
-      "source": "FFBad"
-    },
-    {
       "titre": "Championnats d’Europe Vétérans : 8 titres et 6 médailles pour les tricolores",
       "extrait": "Du 19 au 27 septembre, plus de 220 joueuses et joueurs français ont porté haut les couleurs de la France à Cagliari, en Italie, à l’occasion des Championnats d’Europe Vétérans 2026.",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/championnats-deurope-veterans-8-titres-et-6-medailles-pour-les-tricolores",
       "source": "FFBad"
     },
     {
-      "titre": "Journée mondiale du badminton - Tournoi Solidaire",
-      "extrait": "Le 5 juillet 2025, à l'occasion de la journée mondiale du badminton, la Fédération Française de Badminton a souhaité mettre à l'honneur les valeurs qui font la force de la discipline : le partage, la…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/journee-mondiale-du-badminton-tournoi-solidaire",
+      "titre": "Jeux Olympiques de la Jeunesse : la sélection officielle",
+      "extrait": "Du dimanche 1er au jeudi 5 novembre, à l'occasion de la 4ème édition des Jeux olympiques de la Jeunesse d'été, 2 jeunes athlètes français seront présents à Dakar, au Sénégal, pour défendre les couleur…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/jeux-olympiques-de-la-jeunesse-la-selection-officielle",
       "source": "FFBad"
     },
     {
-      "titre": "Les compétitions inclusives",
-      "extrait": "Afin de rendre la pratique compétitive plus accessible aux personnes en situation de handicap (PSH), la Fédération Française de Badminton lance une expérimentation.",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/les-competitions-inclusives",
+      "titre": "Journée mondiale du badminton - Tournoi Solidaire",
+      "extrait": "Le 5 juillet 2025, à l'occasion de la journée mondiale du badminton, la Fédération Française de Badminton a souhaité mettre à l'honneur les valeurs qui font la force de la discipline : le partage, la…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/journee-mondiale-du-badminton-tournoi-solidaire",
       "source": "FFBad"
     }
   ]
