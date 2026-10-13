@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-12T12:36:36.001Z",
+  "maj": "2026-10-13T12:22:27.723Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Appel à candidatures - Groupe de travail « Indicateurs de pilotage et sources de données »",
+      "extrait": "Un appel à candidatures pour rejoindre le groupe de travail « Indicateurs de pilotage et sources de données » est ouvert jusqu’au dimanche 25 octobre 2026.",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/appel-a-candidatures-groupe-de-travail-indicateurs-de-pilotage-et-sources-de-donnees",
+      "source": "FFBad"
+    },
     {
       "titre": "Championnats d'Europe U15 : 4 titres et une moisson de médailles",
       "extrait": "L'équipe de France U15 a marqué la scène européenne lors des derniers Championnats d'Europe. Avec pas moins de quatre titres continentaux, une médaille d'argent et une médaille de bronze, les jeunes T…",
@@ -30,12 +36,6 @@
       "titre": "Top 12 | J2 : L’AUCB contrarie Chambly, Fos-sur-Mer confirme",
       "extrait": "Deuxième journée de compétition en Top 12 ce samedi ! À domicile, Aix-en-Provence est parvenu à tenir en échec Chambly alors que Strasbourg l’emporte à nouveau. Dans la poule 2, Fos-sur-Mer et Mulhous…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-j2-laucb-contrarie-chambly-fos-sur-mer-confirme",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Jeux Olympiques de la Jeunesse : la sélection officielle",
-      "extrait": "Du dimanche 1er au jeudi 5 novembre, à l'occasion de la 4ème édition des Jeux olympiques de la Jeunesse d'été, 2 jeunes athlètes français seront présents à Dakar, au Sénégal, pour défendre les couleur…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/jeux-olympiques-de-la-jeunesse-la-selection-officielle",
       "source": "FFBad"
     }
   ]
