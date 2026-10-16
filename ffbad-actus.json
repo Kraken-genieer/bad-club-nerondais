@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-15T09:31:43.401Z",
+  "maj": "2026-10-16T09:24:37.536Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Origine et Histoire : Dieppe, Ville Phare du Badminton",
+      "extrait": "Il y a plus d’un siècle, avec le développement de la machine à vapeur, les moyens de transport ont fait de tels progrès que les personnes les plus aisées se sont mises à voyager.Les Anglais sont alors…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/origine-et-histoire-dieppe-ville-phare-du-badminton",
+      "source": "FFBad"
+    },
     {
       "titre": "Yonex IFB : Comment suivre l'édition 2026 ?",
       "extrait": "Les Yonex IFB sont de retour pour une nouvelle édition à l’Arena Grand Paris, à Tremblay-en-France, du 20 au 25 octobre. Cette étape du circuit mondial BWF World Tour réunira les meilleurs joueurs et…",
@@ -30,12 +36,6 @@
       "titre": "Antoine Batard, nouvel arbitre BEC Accrédité",
       "extrait": "",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/antoine-batard-nouvel-arbitre-bec-accredite",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Forfait sur une compétition : 5 jours pour déposer son justificatif sur MyFFBaD",
-      "extrait": "Un licencié inscrit à une compétition et qui ne s'y présente pas peut justifier son absence en ligne, depuis la rubrique « Mes justificatifs » de MyFFBaD. Un tutoriel pas à pas, publié détaille la dém…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/forfait-sur-une-competition-5-jours-pour-deposer-son-justificatif-sur-myffbad",
       "source": "FFBad"
     }
   ]
