@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-22T09:45:09.834Z",
+  "maj": "2026-10-23T09:40:58.660Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "YONEX IFB : Carton presque plein pour nos Bleus !",
+      "extrait": "Trois Bleus en quarts, un choc franco-français en perspective : le simple hommes tricolore est en feu aux Yonex IFB ! Christo POPOV, Toma Junior POPOV et Alex LANIER poursuivent leur route, tandis que…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/yonex-ifb-carton-presque-plein-pour-nos-bleus",
+      "source": "FFBad"
+    },
     {
       "titre": "YONEX IFB : Les favoris assurent leur rang",
       "extrait": "Entrée en matière réussie pour Christo POPOV et Alex LANIER en simple hommes. Arnaud MERKLE a, en revanche, subi la loi du duel franco-français. Du côté du double dames, Camille POGNANTE et Margot LAM…",
@@ -30,12 +36,6 @@
       "titre": "Danemark Open : Alex LANIER en patron à Odense",
       "extrait": "Quelle semaine pour Alex LANIER ! Le Champion du Monde 2026 écrit une nouvelle page de l’histoire du badminton français en remportant l'Open du Danemark face au Danois Anders ANTONSEN (n°2) 21/15 13/2…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/danemark-open-alex-lanier-en-patron-a-odense",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Appel à candidatures - Commission fédérale scientifique",
-      "extrait": "",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/appel-a-candidatures-commission-federale-scientifique",
       "source": "FFBad"
     }
   ]
