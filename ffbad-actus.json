@@ -1,7 +1,13 @@
 {
-  "maj": "2026-10-26T10:39:50.874Z",
+  "maj": "2026-10-27T10:08:12.098Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Collecte Nationale des Banques Alimentaires",
+      "extrait": "Partenaires de la Fédération Française de Badminton, les Banques Alimentaires lancent leur Collecte Nationale, qui aura lieu les 6, 7 et 8 novembre 2026. Mobilisez votre club et faites un don !",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/collecte-nationale-des-banques-alimentaires",
+      "source": "FFBad"
+    },
     {
       "titre": "Christo POPOV écrit l’histoire !",
       "extrait": "Journée historique pour le badminton français ! En finale des Internationaux de France pour la deuxième année de suite, Christo POPOV a cette fois-ci décroché le plus beau métal, dans une Arena Grand…",
@@ -30,12 +36,6 @@
       "titre": "YONEX IFB : Les favoris assurent leur rang",
       "extrait": "Entrée en matière réussie pour Christo POPOV et Alex LANIER en simple hommes. Arnaud MERKLE a, en revanche, subi la loi du duel franco-français. Du côté du double dames, Camille POGNANTE et Margot LAM…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/yonex-ifb-les-favoris-assurent-leur-rang",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Frédéric DUMONT, nouveau JA continental",
-      "extrait": "",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/frederic-dumont-nouveau-ja-continental",
       "source": "FFBad"
     }
   ]
