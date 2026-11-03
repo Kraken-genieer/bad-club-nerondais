@@ -1,7 +1,19 @@
 {
-  "maj": "2026-11-02T12:58:29.756Z",
+  "maj": "2026-11-03T12:31:11.659Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Stage féminin de Plumfoot à Châtenay-Malabry",
+      "extrait": "",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/stage-feminin-de-plumfoot-a-chatenay-malabry",
+      "source": "FFBad"
+    },
+    {
+      "titre": "Webinaire des compétitions inclusives et de la campagne Téléthon 2026",
+      "extrait": "Ce mercredi 28 octobre, la Fédération Française de Badminton ainsi que son partenaire solidaire, l’AFM-Téléthon, vous ont proposé un webinaire. Deux sujets ont été évoqués : les compétitions inclusive…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/webinaire-des-competitions-inclusives-et-de-la-campagne-telethon-2026",
+      "source": "FFBad"
+    },
     {
       "titre": "Jeux olympiques de la Jeunesse : Mady SOW et Neela LENGUE TE entrent en lice à Dakar",
       "extrait": "Du dimanche 1er au jeudi 5 novembre, le badminton français est à l’honneur à Dakar, au Sénégal, à l’occasion de la 4e édition des Jeux olympiques de la Jeunesse d’été. Mady SOW et Neela LENGUE TE port…",
@@ -24,18 +36,6 @@
       "titre": "Collecte Nationale des Banques Alimentaires",
       "extrait": "Partenaires de la Fédération Française de Badminton, les Banques Alimentaires lancent leur Collecte Nationale, qui aura lieu les 6, 7 et 8 novembre 2026. Mobilisez votre club et faites un don !",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/collecte-nationale-des-banques-alimentaires",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Christo POPOV écrit l’histoire !",
-      "extrait": "Journée historique pour le badminton français ! En finale des Internationaux de France pour la deuxième année de suite, Christo POPOV a cette fois-ci décroché le plus beau métal, dans une Arena Grand…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/christo-popov-ecrit-lhistoire",
-      "source": "FFBad"
-    },
-    {
-      "titre": "YONEX IFB : Christo POPOV à nouveau au rendez-vous des finales",
-      "extrait": "Déjà finaliste des Yonex IFB l’an passé, Christo POPOV (n°3) tentera demain de remporter le titre et d’accéder ainsi à la place de numéro 1 mondial. Vainqueur du Chinois HU Zhe An (n°32) sur le score…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/yonex-ifb-christo-popov-a-nouveau-au-rendez-vous-des-finales",
       "source": "FFBad"
     }
   ]
