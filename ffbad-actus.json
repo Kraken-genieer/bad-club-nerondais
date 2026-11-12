@@ -1,7 +1,13 @@
 {
-  "maj": "2026-11-11T12:18:38.049Z",
+  "maj": "2026-11-12T13:28:01.529Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Circuit Fédéral Vétérans - Etape 2",
+      "extrait": "",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/circuit-federal-veterans-etape-2",
+      "source": "FFBad"
+    },
     {
       "titre": "Prix mémoires 2027 : c'est parti !",
       "extrait": "En 2027, la Fédération Française de Badminton renouvelle son prix des Mémoires Étudiants afin de récompenser les meilleurs travaux en lien avec le monde du Badminton. Ce prix récompense les travaux de…",
@@ -15,27 +21,21 @@
       "source": "FFBad"
     },
     {
-      "titre": "Impulsion Para-bad sur l'île de la Réunion - Centre des Tamarins Sud",
-      "extrait": "Dans le cadre de la Semaine Impulsion Para-Bad, organisée du 2 au 8 novembre 2026 sur l’île de La Réunion, la Fédération Française de Badminton (FFBaD) et la Ligue Nouvelle du Badminton Réunionnais se…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/impulsion-para-bad-sur-l-ile-de-la-reunion-centre-des-tamarins-sud",
-      "source": "FFBad"
-    },
-    {
       "titre": "Impulsion Para-bad sur l'île de la Réunion - Collège Guy Môquet à Saint-Benoît",
       "extrait": "Dans le cadre de la Semaine Impulsion Para-Bad, organisée du 2 au 8 novembre 2026 sur l’île de La Réunion, la Fédération Française de Badminton (FFBaD) et la Ligue Nouvelle du Badminton Réunionnais se…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/impulsion-para-bad-sur-l-ile-de-la-reunion-college-guy-moquet-a-saint-benoit",
       "source": "FFBad"
     },
     {
-      "titre": "Mady SOW médaillé d’argent aux Jeux Olympiques de la Jeunesse",
-      "extrait": "Porté par un public sénégalais en feu, Mady SOW a dominé le tournoi avant de s’incliner de peu en finale et de décrocher une médaille d’argent historique. De son côté, Neela LENGUETE quitte la compéti…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/mady-sow-medaille-dargent-aux-jeux-olympiques-de-la-jeunesse",
+      "titre": "Impulsion Para-bad sur l'île de la Réunion - Centre des Tamarins Sud",
+      "extrait": "Dans le cadre de la Semaine Impulsion Para-Bad, organisée du 2 au 8 novembre 2026 sur l’île de La Réunion, la Fédération Française de Badminton (FFBaD) et la Ligue Nouvelle du Badminton Réunionnais se…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/impulsion-para-bad-sur-l-ile-de-la-reunion-centre-des-tamarins-sud",
       "source": "FFBad"
     },
     {
-      "titre": "Formations en ligne sur la lutte contre les violences et discriminations",
-      "extrait": "Pour faire des clubs des espaces toujours plus sûrs et bienveillants, la FFBaD met à disposition un nouveau MOOC de sensibilisation à toutes les formes de violences. Accessible à tous les licenciés et…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/formations-en-ligne-sur-la-lutte-contre-les-violences-et-discriminations",
+      "titre": "Mady SOW médaillé d’argent aux Jeux Olympiques de la Jeunesse",
+      "extrait": "Porté par un public sénégalais en feu, Mady SOW a dominé le tournoi avant de s’incliner de peu en finale et de décrocher une médaille d’argent historique. De son côté, Neela LENGUETE quitte la compéti…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/mady-sow-medaille-dargent-aux-jeux-olympiques-de-la-jeunesse",
       "source": "FFBad"
     }
   ]
