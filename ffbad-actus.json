@@ -1,7 +1,19 @@
 {
-  "maj": "2026-11-24T15:26:25.254Z",
+  "maj": "2026-11-25T15:12:15.543Z",
   "source": "https://www.ffbad.org/actualites",
   "articles": [
+    {
+      "titre": "Tombola du 40ème Téléthon",
+      "extrait": "Tentez de gagner un T-shirt dédicacé par Delphine Delrue (joueuse de l’équipe de France de badminton et championne du monde en double mixte en 2026) à l’occasion de la Grande Tombola du 40ᵉ Téléthon,…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/tombola-du-40eme-telethon",
+      "source": "FFBad"
+    },
+    {
+      "titre": "Résultats des étapes du circuit para-bad",
+      "extrait": "Le circuit para-badminton de la Fédération Française de Badminton a débuté au cours de ce mois de novembre. Les 8 et 22 novembre ont respectivement eu lieu les deux premières étapes du circuit à Cosne…",
+      "lien": "https://www.ffbad.org/actualites/actualites/2026/resultats-des-etapes-du-circuit-para-bad",
+      "source": "FFBad"
+    },
     {
       "titre": "Information sur un incident de sécurité maîtrisé concernant certaines données personnelles",
       "extrait": "Le 24 octobre 2026, La Fédération Française de Badminton a été informée, par un signalement relayé par un site spécialisé (FrenchBreaches), d’un accès non autorisé à l’un de ses services de consultati…",
@@ -24,18 +36,6 @@
       "titre": "Prix mémoires 2027 : c'est parti !",
       "extrait": "En 2027, la Fédération Française de Badminton renouvelle son prix des Mémoires Étudiants afin de récompenser les meilleurs travaux en lien avec le monde du Badminton. Ce prix récompense les travaux de…",
       "lien": "https://www.ffbad.org/actualites/actualites/2026/prix-memoires-2027-c-est-parti",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Top 12 | J3 : Strasbourg aux commandes, Saint-Maur-des-Fossés clinique",
-      "extrait": "La troisième journée de Top 12 s’est déroulée ce samedi ! Le tenant du titre Strasbourg s’impose et reprend les commandes de la poule 1 devant Chambly, tenu en échec. Dans la poule 2, Fos-sur-Mer est…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/top-12-j3-strasbourg-aux-commandes-saint-maur-des-fosses-clinique",
-      "source": "FFBad"
-    },
-    {
-      "titre": "Impulsion Para-bad sur l'île de la Réunion - Collège Guy Môquet à Saint-Benoît",
-      "extrait": "Dans le cadre de la Semaine Impulsion Para-Bad, organisée du 2 au 8 novembre 2026 sur l’île de La Réunion, la Fédération Française de Badminton (FFBaD) et la Ligue Nouvelle du Badminton Réunionnais se…",
-      "lien": "https://www.ffbad.org/actualites/actualites/2026/impulsion-para-bad-sur-l-ile-de-la-reunion-college-guy-moquet-a-saint-benoit",
       "source": "FFBad"
     }
   ]
